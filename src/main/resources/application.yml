@@ -16,5 +16,7 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: create
+JWT:
+  secret: machainesupersecrete43534534534343454353467712334GGG
 
 
