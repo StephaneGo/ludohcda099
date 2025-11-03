@@ -13,8 +13,9 @@ import lombok.RequiredArgsConstructor;
 @Table(name = "utilisateurs")
 public class Utilisateur {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer noUtilisateur;
+    @Column(unique = true)
     @NonNull private String login;
     @NonNull private String password;
     @NonNull private String role;
